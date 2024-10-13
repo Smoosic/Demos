@@ -1,0 +1,357 @@
+
+
+@font-face {
+    font-family: 'Petaluma Script';
+    src: url('https://smoosic.github.io/Smoosic/src/styles/fonts/petalumascript-webfont.woff2') format('woff2'),
+         url('https://smoosic.github.io/Smoosic/src/styles/fonts/petalumascript-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('https://smoosic.github.io/Smoosic/src/styles/fonts/robotoslab-webfont.woff2') format('woff2'),
+         url('https://smoosic.github.io/Smoosic/src/styles/fonts/robotoslab-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('https://smoosic.github.io/Smoosic/src/styles/fonts/Merriweather-Regular.woff2') format('woff2'),
+         url('https://smoosic.github.io/Smoosic/src/styles/fonts/Merriweather-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Commissioner';
+    src: url('https://smoosic.github.io/Smoosic/src/styles/fonts/Commissioner-Medium.woff2') format('woff2'),
+         url('https://smoosic.github.io/Smoosic/src/styles/fonts/Commissioner-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ConcertOne';
+    src: url('https://smoosic.github.io/Smoosic/src/styles/fonts/ConcertOne-Regular.woff2') format('woff2'),
+         url('https://smoosic.github.io/Smoosic/src/styles/fonts/ConcertOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('https://smoosic.github.io/Smoosic/src/styles/fonts/SourceSansPro-Regular.woff2') format('woff2'),
+         url('https://smoosic.github.io/Smoosic/src/styles/fonts/SourceSansPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('https://smoosic.github.io/Smoosic/src/styles/fonts/SourceSerifPro-Regular.woff2') format('woff2'),
+         url('https://smoosic.github.io/Smoosic/src/styles/fonts/SourceSerifPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bravura';
+  src:
+    url('https://smoosic.github.io/Smoosic/src/styles/fonts/Bravura_1.392.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Gonville';
+  src:
+    url('https://smoosic.github.io/Smoosic/src/styles/fonts/Gonville-18_20200703.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Leland';
+  src:
+    url('https://smoosic.github.io/Smoosic/src/styles/fonts/Leland_0.75.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Petaluma';
+  src:
+    url('https://smoosic.github.io/Smoosic/src/styles/fonts/Petaluma_1.065.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.printing #link-hdr {
+  display: none;
+}
+#link-hdr {
+  position: relative;
+  background: #aaa;
+  display: block;
+  width: 100%;
+  padding-left: 8px;
+}
+#link-hdr.hide {
+  display: none;
+}
+#link-hdr button {
+  position: absolute;
+  right: 8px;
+  border: 0;
+  background: #aaa;
+  color: #990808;
+  cursor: pointer;
+}
+body {
+	margin:0;
+	overflow:hidden;
+}
+/* override bootstrap */
+body.modal {
+  display: block; 
+}
+li.nav-item button.nav-link {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+/* @font-face {
+  font-family:'Bubblegum Sans',cursive;
+  font-family:'Yatra One',cursive;
+}   */
+h1 {
+	text-align:center;
+}
+
+.subTitle {
+	height: 14px;
+	font-size:0.8em;
+	text-align:center;
+}
+
+.dom-container {
+	background-color:#999;
+}
+.bold-italic {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.testTitle {
+	height: 20px;
+	font-size:1.2em;
+    margin:0;
+}
+
+#birdy {
+    width:50;
+    height:50;
+    position:fixed;
+}
+
+.svg-debug-box text {
+	font-size:0.55em;
+    stroke: none;
+    opacity: 1;
+}
+.svg-debug-box line {
+    stroke-width: 1px;
+    opacity: 0.3;
+}
+.measure-place-dbg.svg-debug-box {
+	fill:#99e;
+    stroke: #77e;
+}
+.measure-adjust-dbg.svg-debug-box {
+	fill:#492;
+    stroke: #371;
+}
+.system-place-dbg.svg-debug-box {
+	fill:#511;
+    stroke: #330808;
+}
+
+.scroll-box-debug {
+	fill:#492;
+  stroke: #371;
+  position: fixed;
+  font-size: 10px;
+  font-family: 'Roboto Slab';
+}
+.cursor-adj-dbg {
+	fill:#942;
+  stroke: #731;
+  position: fixed;
+  font-size: 10px;
+  font-family: 'Roboto Slab';
+}
+.measure-note-dbg line {
+	stroke:#fc9;
+	stroke-width:1;
+}
+
+.svg-debug-box.render-x-dbg line {
+	stroke:#229cee;
+  fill:#229cee;
+  stroke-width:2;
+  opacity: 1;
+}
+.measure-note-dbg text {
+	display:none;
+}
+.svg-debug-box.measure-render-dbg {
+	stroke:#e99;
+	fill:#933;
+}
+
+.measure-format  {
+    fill:#229cee;
+}
+
+body.print-render .measure-format {
+    display:none;
+}
+
+body.printing .piano-container {
+  display:none;
+}
+body.printing .hide-print, 
+body.printing .vf-hide-print,
+body.printing .media div.d-flex
+{
+  display: none;
+}
+
+@media print {
+    .controls-left,.controls-top,.testTitle {
+       display:none;
+    }
+
+    #vf-selection-outline,
+    #vf-suggestion-outline {
+      display: none;
+    }
+
+    .piano-container {
+        display:none;
+    }
+
+    .musicRelief {
+        overflow:hidden;
+    }
+    .measure-format {
+        dislay:none;
+    }
+
+    .workspace {
+        padding-top: 0;
+        position:relative;
+        padding-left: 0;
+        background: #999;
+    }
+    iframe {
+        border:0;
+    }
+	.musicReliefShadow {
+		display:none;
+	}
+
+}
+
+body.printing .workspace-container {
+    display:none;
+}
+body.printing .controls-left,
+body.printing .control-bar
+ {
+  display:none;
+}
+
+body.printing iframe {
+    border:none;
+}
+body.printing .printFrame {
+    display:block;
+    overflow:visible;
+}
+.printFrame {
+    display:none;
+}
+.printFrame iframe {
+    background:#fff;
+}
+
+@media screen {
+	.musicRelief {
+    overflow:auto;
+    display:flex;
+    flex-flow:column nowrap;
+    flex: 1 1 auto;
+  }
+  .workspace {
+    padding-top: 2px;
+    position:relative;
+    background: #999;
+    display:flex;
+    flex-flow:row wrap;
+  }
+}
+
+.musicRelief {
+	background:#999;
+
+}
+.media {
+	display:flex;
+  flex-flow:row nowrap;
+  flex-basis:100%;
+  overflow-y:auto;
+}
+
+.saveLink {
+    display:none;
+}
+
+.musicContainer {
+    position: relative;
+	background:#fff;
+}
+.overlay {
+	display:none;
+}
+
+.vf-lyric.under-edit {
+  fill: none;
+  stroke: #fff;
+}
+
+.separator {
+	width:15px;
+	/* text-align: center; */
+	display: inline-block;
+	font-weight: bold;
+	text-justify:center;
+}
+
+.glyphRender {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:12;
+}

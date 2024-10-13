@@ -1,0 +1,19 @@
+{
+  "name": "SmoosicDemos",
+  "dependencies": {
+    "smoosic": "../Smoosic",
+    "ts-loader": "^9.2.5",
+    "typedoc": "^0.25.0",
+    "typescript": "^5.2.2",
+    "copy-webpack-plugin": "^12.0.2",
+    "jquery": "^3.6.0",
+    "ts-node": "^10.9.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^4.7.2"    
+  },
+  "main": "build/demo.js",
+  "scripts": {
+    "build": "node ./build/build.js",
+    "types": "node ./build/build.js types"
+  }
+}
