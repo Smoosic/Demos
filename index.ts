@@ -1,12 +1,13 @@
 import { runner } from './src/runner';
-import { SuiApplication, SuiDom } from 'smoosic';
-
+import { SuiApplication, SuiDom, SmoScore, IsPitchLetter, 
+  SmoMusic, SmoMeasure, SmoNote, SmoOrnament, SmoInstrument, SmoSystemStaff,
+  SmoSystemGroup, SmoSelector, dynamicCtorInit, SmoBeamer } from 'smoosic';
 /**
- * There are a lot of dynamic constructors in Smoosic, we need to import those symbols so the runtime can find them
- * when it needs to.  They are used when deserializing scores, and for some UI elements.
- * SmoNamespace.value contains the global namespace value for Smoosic used for dynamic constructors.  
- * Demo projects can change the Smo namespace to  match their default namespace.
+ * Expose the Smoosic symbols we need in the demo programs, and add them to our 
+ * default namespace
  */
-export const Smo = { SuiApplication, SuiDom }
+export const Smo = { SuiApplication, SuiDom, SmoScore, IsPitchLetter, 
+  SmoMusic, SmoMeasure, SmoNote, SmoOrnament, SmoInstrument, SmoSystemStaff,
+  SmoSystemGroup, SmoSelector, dynamicCtorInit, SmoBeamer }
 export const demo = { runner, Smo };
 export default demo;

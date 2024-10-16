@@ -1,18 +1,33 @@
 
+import { mainApp } from './mainApp';
+import { asyncDemo } from './asyncDemo';
+import { syncDemo } from './syncDemo';
 import { Smo } from '../index';
 
-// export type SMO = demoSmo;
-export type SmoMode = 'library' | 'application' | 'translate';
 export class runner { 
   static main() {
-    const dom = document.getElementById('smoo');
-    if (!dom) {
-      throw('No element for Smoosic!');
-    }
-    Smo.SuiDom.createUiDom(dom);
-    const mode: SmoMode = 'application'
-    const config = { mode, leftControls: 'controls-left', topControls: 'controls-top'
-      , scoreDomContainer: 'smo-scroll-region'  };
-    Smo.SuiApplication.configure(config);
+    mainApp.run();
+  }
+  static async asyncDemoMain() {
+    await asyncDemo.run();
+  }
+  static async asyncLoadFile() {
+    const path = 'https://smoosic.github.io/Smoosic/release/library/hymns/Precious Lord.json';
+    await Smo.SuiApplication.configure({
+      mode: 'library',
+      scoreDomContainer: 'outer-container',
+      remoteScore: path
+    });
+  }
+  static async asyncLoadXml() {
+    const path = 'https://smoosic.github.io/Smoosic/release/library/Beethoven_AnDieFerneGeliebte.xml';
+    await Smo.SuiApplication.configure({
+      mode: 'library',
+      scoreDomContainer: 'outer-container',
+      remoteScore: path
+    });
+  }
+  static async syncDemoMain() {
+    await syncDemo.run();
   }
 }
