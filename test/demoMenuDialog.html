@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<meta charset="utf-8">
+		<title>Smoosic Editor</title>
+		<link href="../styles/fonts.css" rel="stylesheet">
+        <link href="../styles/media.css" rel="stylesheet">
+        <link href="https://smoosic.github.io/Smoosic/src/styles/ribbon.css" rel="stylesheet">
+        <link href="https://smoosic.github.io/Smoosic/src/styles/dialogs.css" rel="stylesheet">
+        <link href="https://smoosic.github.io/Smoosic/src/styles/menus.css" rel="stylesheet">
+        <link href="https://smoosic.github.io/Smoosic/src/styles/piano.css" rel="stylesheet">
+        <link href="https://smoosic.github.io/Smoosic/src/styles/tree.css" rel="stylesheet">
+        <link href="https://smoosic.github.io/Smoosic/src/styles/bravura-font-codes.css" rel="stylesheet">
+        <link href="https://smoosic.github.io/Smoosic/src/styles/bootstrap.min.css" rel="stylesheet">        
+        <!-- script type="text/javascript" src="../../node_modules/vexflow_smoosic/build/cjs/vexflow-debug-with-tests.js"></script -->
+        <!-- script type="text/javascript" src="../../../vexflow_smoosic/build/cjs/vexflow-debug-with-tests.js"></script -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.js" ></script>
+        <script type="text/javascript" src="../build/demo.js" ></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function (event) {
+        demo.runner.demoMenuDialog();
+      });
+       </script>
+</head>
+<body>
+  <div>
+    <audio crossOrigin="anonymous" id="samplecn4" data-pitch="c/4" data-patch="piano"
+      src="https://smoosic.github.io/SmoSounds/piano/piano-c4-iowa.mp3">
+  </div>
+  <div>
+    <audio crossOrigin="anonymous" id="samplebb4" data-pitch="bb/4" data-patch="piano"
+      src="https://smoosic.github.io/SmoSounds/piano/piano-bb4-iowa.mp3"> </audio>
+  </div>
+  <div>
+    <audio crossOrigin="anonymous" id="sample-piano-a2" data-pitch="a/2" data-patch="piano"
+      src="https://smoosic.github.io/SmoSounds/piano/piano-a2.mp3"> </audio>
+  </div>  
+  <div id="smoo"></div>
+</body>
+</html>

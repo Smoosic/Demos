@@ -1,0 +1,1 @@
+{"version":3,"file":"fileConversionDemo.d.ts","sourceRoot":"","sources":["../../src/fileConversionDemo.ts"],"names":[],"mappings":"AACA,OAAO,EAAW,cAAc,EAAY,MAAM,SAAS,CAAC;AAI5D;;GAEG;AACH,qBAAa,iBAAiB;IAC5B,MAAM,CAAC,QAAQ,SAAgF;IAC/F,MAAM,CAAC,YAAY,SAAyE;IAC5F,MAAM,CAAC,eAAe,SAA4E;IAClG,MAAM,CAAC,WAAW,SAA4E;WACjF,GAAG;WAYH,MAAM,CAAC,WAAW,EAAE,cAAc;CA0EhD"}

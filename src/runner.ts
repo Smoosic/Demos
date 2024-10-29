@@ -3,6 +3,8 @@ import { mainApp } from './mainApp';
 import { asyncDemo } from './asyncDemo';
 import { syncDemo } from './syncDemo';
 import { Smo } from '../index';
+import { customMenuApp } from './customMenuDialog';
+import { fileConversionApp } from './fileConversionDemo';
 
 export class runner { 
   static main() {
@@ -29,5 +31,11 @@ export class runner {
   }
   static async syncDemoMain() {
     await syncDemo.run();
+  }
+  static async demoMenuDialog() {
+    await customMenuApp.run();
+  }
+  static async runFileConversionDemo() {
+    await fileConversionApp.run();
   }
 }

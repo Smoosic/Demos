@@ -1,7 +1,7 @@
 {
   "name": "SmoosicDemos",
   "dependencies": {
-    "smoosic": "1.0.7",
+    "smoosic": "1.0.9",
     "ts-loader": "^9.2.5",
     "typedoc": "^0.25.0",
     "typescript": "^5.2.2",
@@ -9,7 +9,9 @@
     "jquery": "^3.6.0",
     "ts-node": "^10.9.2",
     "webpack": "^5.89.0",
-    "webpack-cli": "^4.7.2"    
+    "webpack-cli": "^4.7.2",
+    "@types/qunit": "^2.19.11",
+    "qunit": "2.22.0"
   },
   "main": "build/demo.js",
   "scripts": {
