@@ -6,10 +6,10 @@ declare var $: any;
  * This demo loads some files and converts between midi, musicxml and smo.
  */
 export class fileConversionApp {
-  static jsonPath = 'https://smoosic.github.io/Smoosic/release/library/hymns/Precious Lord.json';
-  static midiTiesPath = 'https://smoosic.github.io/Smoosic/release/library/miditest/ties.mid';
-  static midiTripletPath = 'https://smoosic.github.io/Smoosic/release/library/miditest/triplet.mid';
-  static midiKeyPath = 'https://smoosic.github.io/Smoosic/release/library/miditest/keytime.mid';
+  static jsonPath = 'https://smoosic.github.io/SmoScores/hymns/Precious Lord.json';
+  static midiTiesPath = 'https://smoosic.github.io/SmoScores/miditest/ties.mid';
+  static midiTripletPath = 'https://smoosic.github.io/SmoScores/miditest/triplet.mid';
+  static midiKeyPath = 'https://smoosic.github.io/SmoScores/miditest/keytime.mid';
   static async run() {
     // Create the DOM scaffolding
     const dom = document.getElementById('smoo');    
