@@ -3,7 +3,12 @@ import { SuiApplication, SuiDom, SmoScore, IsPitchLetter,
   SmoMusic, SmoMeasure, SmoNote, SmoOrnament, SmoInstrument, SmoSystemStaff,
   SmoSystemGroup, SmoSelector, dynamicCtorInit, SmoBeamer, 
   createAndDisplayDialog, SuiNoteMenu, SuiMenuCustomizer, SmoOperation,
-  SmoToXml, XmlToSmo, SuiXhrLoader, MidiToSmo, parseMidi } from 'smoosic';
+  SmoToXml, XmlToSmo, SuiXhrLoader, MidiToSmo, parseMidi, cardKeysHtmlEn,
+   cardNotesLetterHtmlEn, cardNotesChromaticHtmlEn, cardNotesChordsHtmlEn,
+    cardNotesRestsHtmlEn, cardDurationNotesHtmlEn, cardDurationTupletsHtmlEn,
+    cardSelectionsNotesHtmlEn, cardSelectionsModifiersHtmlEn, cardSelectionsNonSelectableHtmlEn, cardSelectionsSlashHtmlEn,
+    cardBeamsAndStemsDirectionHtmlEn, cardBeamsAndStemsGroupingHtmlEn,
+    cardMeasuresAddDeleteHtmlEn, cardVoicesCreateDeleteHtmlEn, cardPartAddDeleteHtmlEn } from 'smoosic';
   import { test as QTest, module as QModule, start as QStart } from 'qunit';  
 /**
  * Expose the Smoosic symbols we need in the demo programs, and add them to our 
@@ -13,7 +18,12 @@ export const Smo = { SuiApplication, SuiDom, SmoScore, IsPitchLetter,
   SmoMusic, SmoMeasure, SmoNote, SmoOrnament, SmoInstrument, SmoSystemStaff,
   SmoSystemGroup, SmoSelector, dynamicCtorInit, SmoBeamer, createAndDisplayDialog,
   SuiNoteMenu, SuiMenuCustomizer, SmoOperation, 
-  SmoToXml, XmlToSmo, SuiXhrLoader, MidiToSmo, parseMidi
+  SmoToXml, XmlToSmo, SuiXhrLoader, MidiToSmo, parseMidi, cardKeysHtmlEn,
+   cardNotesLetterHtmlEn, cardNotesChromaticHtmlEn, cardNotesChordsHtmlEn,
+    cardNotesRestsHtmlEn, cardDurationNotesHtmlEn, cardDurationTupletsHtmlEn,
+    cardSelectionsNotesHtmlEn, cardSelectionsModifiersHtmlEn, cardSelectionsNonSelectableHtmlEn, cardSelectionsSlashHtmlEn,
+    cardBeamsAndStemsDirectionHtmlEn, cardBeamsAndStemsGroupingHtmlEn,
+    cardMeasuresAddDeleteHtmlEn, cardVoicesCreateDeleteHtmlEn, cardPartAddDeleteHtmlEn
    }
 export const demo = { runner, Smo, QTest, QModule, QStart };
 export default demo;
