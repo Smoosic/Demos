@@ -1,5 +1,5 @@
 import { Smo } from '../index';
-import { SmoVoice, SmoInstrumentParams, dynamicCtorInit } from 'smoosic';
+import { SmoVoice, SmoInstrumentParams } from 'smoosic';
 /**
  * This demo shows how to create and update a score in real time, as you might do from a UI.
  * We programatically create selections and operate on those selections the way a user would
@@ -127,7 +127,7 @@ export class syncDemo {
       Smo.SuiApplication.configure({
         mode: 'library',
         initialScore: score,
-        scoreDomContainer: 'outer-container'
+        domContainer: 'outer-container'
       });
   }
 }

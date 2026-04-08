@@ -20,7 +20,7 @@ export class runner {
     const path = 'https://smoosic.github.io/SmoScores/hymns/Precious Lord.json';
     await Smo.SuiApplication.configure({
       mode: 'library',
-      scoreDomContainer: 'outer-container',
+      domContainer: 'outer-container',
       remoteScore: path
     });
   }
@@ -28,7 +28,7 @@ export class runner {
     const path = 'https://smoosic.github.io/SmoScores/Beethoven_AnDieFerneGeliebte.xml';
     await Smo.SuiApplication.configure({
       mode: 'library',
-      scoreDomContainer: 'outer-container',
+      domContainer: 'outer-container',
       remoteScore: path
     });
   }

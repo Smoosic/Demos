@@ -143,7 +143,7 @@ export class customMenuApp {
     if (!dom) {
       throw('No element for Smoosic!');
     }
-    Smo.SuiDom.createUiDom(dom);
+    Smo.SuiApplication.configure({domContainer:dom});
     const mode: SmoMode = 'application';
     const config = { mode };
     Smo.SuiApplication.configure(config);

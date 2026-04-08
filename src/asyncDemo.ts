@@ -23,7 +23,7 @@ export class asyncDemo {
       idleRedrawTime: 1,
       demonPollTime: 1,
       initialScore: undefined,
-      scoreDomContainer: 'outer-container',
+      domContainer: 'outer-container',
     });
     const view = app.view;
     if (!view) { 
@@ -187,6 +187,7 @@ export class asyncDemo {
     svgScale: 0.6,
     zoomScale: 1.5,
     noteSpacing: 1,
+    displayMode: 'vertical'
   });    
   }
 }

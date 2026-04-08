@@ -16,6 +16,18 @@
     font-style: normal;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 @font-face {
     font-family: 'Merriweather';
     src: url('https://smoosic.github.io/Smoosic/src/styles/fonts/Merriweather-Regular.woff2') format('woff2'),
@@ -91,25 +103,27 @@
   font-style: normal;
   font-display: block;
 }
+
 .printing #link-hdr {
   display: none;
 }
 #link-hdr {
-  position: relative;
-  background: #aaa;
-  display: block;
-  width: 100%;
+  display: inline-block;
+  width: auto;
   padding-left: 8px;
+  font-size: 1rem
+}
+#link-hdr a {
+  color: #000;
+  text-decoration: none;
 }
 #link-hdr.hide {
   display: none;
 }
 #link-hdr button {
-  position: absolute;
   right: 8px;
   border: 0;
   background: #aaa;
-  color: #990808;
   cursor: pointer;
 }
 body {
@@ -118,7 +132,7 @@ body {
 }
 /* override bootstrap */
 body.modal {
-  display: block; 
+  display: block;
 }
 li.nav-item button.nav-link {
   text-align: left;
@@ -140,7 +154,7 @@ h1 {
 }
 
 .dom-container {
-	background-color:#999;
+	background: color #99a;;
 }
 .bold-italic {
   font-weight: bold;
@@ -154,7 +168,7 @@ h1 {
 .testTitle {
 	height: 20px;
 	font-size:1.2em;
-    margin:0;
+  margin:0;
 }
 
 #birdy {
@@ -172,9 +186,14 @@ h1 {
     stroke-width: 1px;
     opacity: 0.3;
 }
+.page-dbg.svg-debug-box {
+	fill:#eea;
+  stroke: #ee9;
+  stroke-dasharray: 4 1;
+}
 .measure-place-dbg.svg-debug-box {
 	fill:#99e;
-    stroke: #77e;
+  stroke: #77e;
 }
 .measure-adjust-dbg.svg-debug-box {
 	fill:#492;
@@ -261,7 +280,7 @@ body.printing .media div.d-flex
         padding-top: 0;
         position:relative;
         padding-left: 0;
-        background: #999;
+        background: #99a;
     }
     iframe {
         border:0;
@@ -272,9 +291,8 @@ body.printing .media div.d-flex
 
 }
 
-body.printing .workspace-container {
-    display:none;
-}
+body.printing .workspace-container,
+body.printing #top-bar ,
 body.printing .controls-left,
 body.printing .control-bar
  {
@@ -302,32 +320,41 @@ body.printing .printFrame {
     flex-flow:column nowrap;
     flex: 1 1 auto;
   }
+  .musicRelief .score-container div {
+    background-color: #fff;
+  }
+  .horizontal.musicRelief {
+    flex-flow:row nowrap;
+  }
+  .horizontal.musicRelief .score-container {
+    display: flex;
+  }
   .workspace {
     padding-top: 2px;
     position:relative;
-    background: #999;
+    background: #99a;
     display:flex;
     flex-flow:row wrap;
   }
 }
 
 .musicRelief {
-	background:#999;
-
+	background:#99a;
 }
 .media {
 	display:flex;
   flex-flow:row nowrap;
   flex-basis:100%;
   overflow-y:auto;
+  z-index: 1;
 }
 
 .saveLink {
     display:none;
 }
 
-.musicContainer {
-    position: relative;
+.score-container {
+  position: relative;
 	background:#fff;
 }
 .overlay {

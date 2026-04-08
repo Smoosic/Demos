@@ -1,0 +1,1201 @@
+
+.mw-40 {
+  max-width: 40rem;
+}
+.mw-30 {
+  max-width: 30rem;
+}
+.mw-20 {
+  max-width: 20rem;
+}
+.mw-60 {
+  max-width: 60rem;
+}
+.mw-50 {
+  max-width: 50rem;
+}
+.nw-60 {
+  min-width: 60rem;
+}
+.nw-50 {
+  min-width: 50rem;
+}
+.nw-40 {
+  min-width: 40rem;
+}
+.nw-30 {
+  min-width: 30rem;
+}
+.ms-n1 {
+  margin-left:-0.25rem;
+}
+.ms-n2 {
+  margin-left:-0.5rem;
+}
+.ms-n3 {
+  margin-left:-0.75rem;
+}
+.ms-n4 {
+  margin-left:-1rem;
+}
+.me-n1 {
+  margin-right:-0.25rem;
+}
+.me-n2 {
+  margin-right:-0.5rem;
+}
+.me-n3 {
+  margin-right:-0.75rem;
+}
+.me-n4 {
+  margin-right:-1rem;
+}
+.top-4 {
+  top: 2rem !important;
+}
+.top-3 {
+  top: 1.5rem !important;
+}
+.top-2 {
+  top: 1rem !important;
+}
+.top-1 {
+  top: 0.5rem !important;
+}
+.top-n4 {
+  top: -2rem !important;
+}
+.top-n3 {
+  top: -1.5rem !important;
+}
+.top-n2 {
+  top: -1rem !important;
+}
+.top-n1 {
+  top: -0.5rem !important;
+}
+.row .number-input-column-div,
+.attributeDialog .number-input-column-div {
+  margin-right: -1rem;
+  flex: 0 0 auto;
+  width: 25%;
+}
+.row .number-input-label-div,
+.attributeDialog .number-input-label-div {
+  margin-left: -1rem;
+  text-align: left;
+  flex: 0 0 auto;
+  width: 25%;
+}
+.row .checkbox-input-column-div,
+.attributeDialog .checkbox-input-column-div {
+  margin-right: -1rem;
+  flex: 0 0 auto;
+  width: 25%;
+  text-align:end;
+  padding-right: 3rem;
+}
+.row .checkbox-input-label-div,
+.attributeDialog .checkbox-input-label-div {
+  margin-left: -1rem;
+  text-align: left;
+  flex: 0 0 auto;
+  width: 25%;
+}
+.fs-7 {
+  font-size: 0.8rem!important;
+}
+:root {
+  interpolate-size:allow-keywords;
+}
+.attributeModal .btn-outline-dark {
+  border-color: #357735;
+}
+.form-check-input:not(:checked) {
+  box-shadow:0.1rem 0.1rem 0.08rem 0.1rem #9a9e;
+}
+.form-check-input:checked {
+ background-color: var(--bs-success);
+ box-shadow: 0.1rem 0.1rem 0.08rem 0.1rem #7c9d;
+ width: 1.2rem;
+ height: 1.2rem;
+}
+.group-line-container {
+  position: relative;
+}
+.show-group-line {
+  position:absolute;
+  height:1.5rem;
+  border-left: 2px solid #333;
+}
+.modal .btn {
+  border-color: var(--button-border-color);
+}
+.modal .dropdown .dropdown-item.active {
+  background-color: var(--button-border-color);
+}
+.btn-square {
+  border-radius: 0;
+}
+.collapsable-container {
+  position: relative;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+button.dropdown-toggle {
+  position: relative;
+}
+button.number-click {
+  line-height: 1rem;
+  background: #ddd;
+}
+button.number-click:disabled {
+  background: #e5e5e5;
+}
+input.number-click {
+  line-height: 1rem;
+}
+button.collapsable-button[data-bs-toggle] {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  border-color: #6664;
+}
+button.dropdown-toggle[data-bs-toggle][aria-expanded="true"] span.smo-icon,
+button.collapsable-button[data-bs-toggle][aria-expanded="true"] span.smo-icon {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+button.dropdown-toggle[data-bs-toggle] span.smo-icon{
+  top:0.25rem;
+}
+button.collapsable-button[data-bs-toggle] span.smo-icon {
+  top:0.5rem;
+}
+button.dropdown-toggle[data-bs-toggle] span.smo-icon,
+button.collapsable-button[data-bs-toggle] span.smo-icon {
+  position:absolute;
+  left:0.5rem;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+}
+.dropdown-menu.collapsing,
+.collapsable-text.collapsing,
+.collapsable-row.collapsing {  
+  transition: opacity .5s linear ease-out;
+  height: 0;
+  border:0;
+}
+.collapsable-row.collapsing {
+  display: flex;
+}
+.dropdown-menu.collapsing,
+.collapsable-text.collapsing{
+   display:block;
+}
+.collapsable-row.collapsing.show {
+  height: auto;
+  @starting-style {
+    height: 0;
+    overflow: hidden;
+  }
+}
+.dropdown-menu.collapsing.show,
+.collapsable-text.collapsing.show {  
+  display:block;
+  height: auto;
+  @starting-style {
+    height: 0;
+    overflow: hidden;
+  }
+}
+.dropdown .dropdown-menu {
+  padding-top: 0;
+}
+.no-vertical-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#attr-modal-dialog-libraryMenu #libraryMenu-smoLibrary {
+  max-height: 350px;
+  overflow-y: auto;
+}
+.draganime.hide,.textEdit.hide {
+	display:none;
+}
+
+.draganime {
+	display: block;
+	border: blue 2px solid;
+	position: absolute;
+	z-index: 11;
+}
+.masked .mask {
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  opacity: 0.6;
+  background-color: #888;
+  z-index: 5
+}
+body .vueDialogContainer,  
+body .vueDialogContainer>div {
+  position:absolute;
+  left: 0;
+  top: 0;
+  width: calc(100% - 100px); /* hack - expose the scrollbar */
+  height: 100%;
+}
+body.showVueDialog .vueDialogContainer, 
+body.showVueDialog .modal{
+  position:absolute;
+	/* display:block;  */
+	z-index:3;
+}
+.draggable-button {
+  position: absolute;
+  left: 0.1rem;
+}
+
+.btn-toolbar.dialog-button-group .btn {
+  border-color: var(--bs-form-valid-color);
+}
+
+.dialog-button-group button.btn-sm {
+  position: relative;
+  height:2.3rem;
+  min-width:2.3rem;
+}
+.dialog-button-group button.btn-lg {
+  position: relative;
+  min-width: 120px;
+  max-height: 50px;
+}
+.dialog-button-group button.btn .icon-bravura {
+  font-size: 2.3rem;
+  top:0;
+  left: 0;
+  position: relative
+}
+.ghost {
+  opacity: 0.4;
+}
+body .attributeModal .show-when-editing {
+  display:none;
+}
+
+.tempoTextMode .hide-when-not-text-mode  {
+  display: flex;
+}
+
+.tempoTextMode .hide-when-text-mode {
+  display: none;
+}
+
+.tempoDurationMode .hide-when-not-text-mode {
+  display: none;
+}
+
+body.text-edit .hide-when-editing,
+body.text-move .hide-when-moving {
+  display:none;
+}
+
+body.text-edit .show-when-editing,
+body.text-move .show-when-moving {
+  display:flex;
+  flex-flow: row wrap;
+}
+body.text-edit .show-when-editing div.controlDiv,
+body.text-move .show-when-moving div.controlDiv {
+    display:flex;
+    flex: 0 0 100%;
+    justify-content:center;
+    align-items:center;
+}
+
+
+body.text-edit .show-when-editing div.controlDiv span,
+body.text-edit .show-always div.controlDiv span {
+  display:flex;
+  flex:1 1 auto;
+  justify-content:center;
+  align-items:center;
+  margin:5px;
+}
+
+body.text-edit .show-always {
+  flex: 1 0 100%;
+}
+body.text-resize .textEdit {
+  resize: both;
+}
+
+body.text-edit .cbTextInPlace label,
+body.text-move .cbDragTextDialog label,
+body.text-resize .cbResizeTextBox  label {
+    width:100%;
+}
+
+body.text-edit .buttonContainer,
+body.text-move .buttonContainer,
+body.text-resize .buttonContainer {
+    display:none;
+}
+
+body.text-edit .buttonContainer.show-text-edit {
+    display:block;
+}
+
+.textEdit  {
+	display:block;
+	border:#3e3 2px dashed;
+	position:absolute;
+	z-index:11;
+}
+.textEdit span.icon-move.hide {
+    display:none;
+}
+.textEdit span.icon-move {
+    position:absolute;
+    left:2;
+    top:2;
+}
+/* text edit svg overlay */
+.textEdit {
+    border:#9cc 4px dotted;
+    overflow:hidden;
+    background:#fff;
+}
+.subTitle {
+	height: 14px;
+	font-size:0.8em;
+	text-align:center;
+}
+
+.attributeModal .multiControl.checkboxDropdown .dropdownControl {
+  display: none;
+}
+.attributeModal .multiControl.checkboxDropdown.checked .dropdownControl {
+  display: block;
+}
+.helpKey.help-ellipsis {
+	margin-left: -5px;
+	border:0;
+	width: 5px;
+}
+
+.keyContainer {
+	width: 270px;
+	display:inline-block;
+}
+
+body.showQwerty .qwertyKb {
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 10;
+  background : #eee;
+}
+
+body.showQwerty .qwertyKb .kb-float {
+  display:flex;
+  border: 2px solid #323;
+  border-radius: 8px;
+  padding:4px;
+  font-family: robotoSlab;
+  font-weight:bold;
+  font-size:1.2em;
+}
+ .kb-float.shifted .button-text {
+   display:none;
+ }
+ .kb-float.shifted .button-shifted {
+   display:inline-block;
+ }
+ .kb-float  .button-shifted {
+   display:none;
+ }
+
+.reverse-button {
+  background:#88e;
+}
+
+.transition-button {
+  background:#eee;
+  -webkit-transition:background .5s ease-in;
+  -moz-transition:background .5s ease-in;
+  -o-transition:background .5s ease-in;
+  transition:background .5s ease-in;
+}
+
+body.showQwerty .qwertyKb .kb-float .keyBlock {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+body.showQwerty .keyContainer {
+  width: auto;
+  display:flex;
+}
+
+.kb-float .buttonLine {
+  display:flex;
+  flex-flow: column nowrap;
+}
+
+.keyBlock label {
+	margin-left:7px;
+	margin-right:7px;
+}
+.dropdownControl.smoControl .dropdown-menu.show {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+}
+.attributeDialog .btn.dropdown-toggle {
+  margin-left: 5px;
+  margin-right: 5px;
+  --bs-btn-padding-x: 0.55rem;
+  --bs-btn-padding-y: 0.175rem;
+  font-size: 0.9em;
+}
+body.showVueDialog .attributeDialog,
+body.showAttributeDialog .attributeDialog {
+  position:absolute;
+	display:block;
+	z-index:3;
+}
+
+.attributeDialog {
+	position:absolute;
+  left: 0;
+  top: 0;
+	display:none;
+}
+button.nav-link {
+  width: 100%;
+}
+
+.attributeModal {
+	position:absolute;
+  min-width:380px;
+	background: #fff;
+	border-style: groove;
+	border-width: 2px;
+  border-color: rgba(156, 192, 240, 0.4);
+  box-shadow: 9px 9px 9px rgba(127, 127, 127, 0.4);
+  border-radius: 4px;
+	padding: 3px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.attributeModal .buttonContainer {
+	margin:10px;
+}
+
+.helpDialog .button-left,
+.attributeModal .buttonContainer .button-left {
+	margin-right:5px;
+}
+.helpDialog .button-left {
+  padding-left: 10px;
+}
+.helpDialog .button-right {
+  padding-right: 10px;
+}
+.prev-topic-text {
+  margin-left: 5px;
+}
+.next-topic-text {
+  margin-right: 5px;
+}
+.helpDialog .button-center,
+.attributeModal .buttonContainer .button-center {
+	margin-right:5px;
+	margin-left:5px;
+}
+
+.helpDialog .button-right,
+.attributeModal .buttonContainer .button-right {
+	margin-left:5px;
+}
+.attributeModal h2 {
+	text-align:center;
+	font-size:1.2em;
+  user-select: none;
+}
+
+.smoControlContainer .button-array-buttons button.repetext {
+  font-size: 0.8em;
+  font-style: italic;
+  flex: 4 1 auto;
+  max-width: 70px;
+}
+.smoControl button.icon-bravura {
+  position: inherit;
+  top: inherit;
+  left: inherit;
+  pointer-events: inherit;
+}
+.smoControlContainer .button-array-buttons button.repetext .icon-bravura .button-text {
+  font-size: 12px;
+  min-width: 35px;
+  user-select: none;
+}
+.attributeModal.tempoTextMode #dialog-tempo-duration,
+.attributeModal.tempoTextMode #dialog-tempo-bpm ,
+.attributeModal.tempoDurationMode #dialog-tempo-tempoText {
+	display:none;
+}
+.attributeModal.pad-left-select #dialog-measure-padAllInSystem {
+    display:block;
+}
+
+.attributeModal #dialog-measure-padAllInSystem {
+    display:none;
+}
+
+.attributeModal #dialog-measure-measureTextPosition {
+    display:none;
+}
+
+.attributeModal.measure-text-set #dialog-measure-measureTextPosition {
+    display:block;
+}
+
+.attributeModal .hide {
+  display: none!important;
+}
+
+#attr-modal-dialog-dialog-tempo .smoControlContainer select,
+#attr-modal-dialog-dialog-measure .smoControlContainer select {
+    margin-left: 70px;
+    width:175px;
+}
+
+#attr-modal-dialog-dialog-tempo .smoControlContainer .rockerControl label,
+#attr-modal-dialog-dialog-tempo .smoControlContainer .dropdownControl label,
+#attr-modal-dialog-dialog-measure .smoControlContainer .dropdownControl label,
+#attr-modal-dialog-dialog-tempo .smoControlContainer .toggleControl label,
+.smoControlContainer .text-input label
+ {
+    margin-left:15px;
+}
+
+.smoControlContainer .smoControl.hide-input {
+  min-width: 600px;
+  user-select: none;
+}
+.smoControlContainer .text-input.hide-input input {
+  display: none;
+}
+
+.smoControl.toggleControl {
+    display:flex;
+    align-items:center;
+}
+#attr-modal-dialog-dialog-tempo .smoControlContainer .toggleControl input,
+#attr-modal-dialog-dialog-measure .smoControlContainer .toggleControl input
+ {
+    margin-left:64px;
+    height:auto;
+}
+#attr-modal-dialog-dialog-tempo .smoControlContainer input.rockerInput,
+#attr-modal-dialog-dialog-measure .smoControlContainer input.rockerInput {
+    width: 175px;
+}
+.attributeModal #dialog-layout-pageWidth,
+.attributeModal #dialog-layout-pageHeight {
+	display:none;
+}
+.attributeModal #dialog-layout-pageWidth,
+.attributeModal #dialog-layout-pageHeight {
+	display:none;
+}
+
+.attributeModal.customPage #dialog-layout-pageWidth,
+.attributeModal.customPage #dialog-layout-pageHeight {
+	display:block;
+}
+
+.attributeModal .font-purpose {
+  font-size: 1.0em;
+}
+.attributeModal [data-param="engravingFont"] {
+  font-size: 1.0em;
+  font-weight: bold;
+}
+.buttonContainer {
+	text-align:center;
+	margin-top:3px;
+}
+
+.buttonContainer button {
+	margin-right:5px;
+}
+
+.attributeModal .smoControlContainer {
+    display:flex;
+    flex-flow: row wrap;
+}
+.attributeModal .smoControlContainer .smoControl.multiControl.pitch-array-parent {
+  display: flex;
+  flex-flow: column;
+}
+.pitch-array-item {
+  border: 2px #ddd inset;
+}
+.pitch-array-parent .pitch-array-container .multiControl.smoControl.pitchContainer {
+  border: none;
+}
+.pitch-array-container {
+  display: flex;
+  flex-flow: column;
+}
+.attributeModal .smoControl.multiControl {
+  flex: 1 1 100%;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 5px 0;
+  border: 2px #ddd outset;
+}
+.attributeModal .smoControl.buttonArray {
+  flex-flow: column nowrap;
+  border: 2px #ddd outset;
+}
+.pad-span {
+  padding: 5px;
+  user-select: none;
+}
+.attributeModal .smoControl.buttonArray .button-array-row{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content:flex-start;
+}
+.button-array-buttons {
+  display: flex;
+  align-items: center;
+  flex: 1 2 auto;
+}
+.button-row-container {
+  display:flex;
+  flex-flow: column;
+  flex: 1 1 auto;
+}
+.button-array-label {
+  display: flex;
+  flex: 0 0 100px;
+  min-width: 100px;
+  justify-content: flex-end;
+}
+.nav-item {
+  border-bottom: 1px solid #eee;
+}
+.attributeModal .smoControl.button-hotkey {
+  display: flex;
+  flex-flow: row;
+}
+.attributeModal .smoControl.button-hotkey button {
+  width: 70px;
+  text-align: left;
+}
+.attributeModal .smoControl.button-hotkey span.button-text {
+  float: right;
+  user-select: none;
+}
+.attributeModal .smoControl.buttonArray .icon-bravura {
+  left:calc(50% - 12px);
+}
+.attributeModal .smoControl.buttonArray .icon-bravura.icon-mid {
+  top: 0;
+  left:8px;
+}
+.attributeModal .smoControl.buttonArray .icon-bravura.icon-transparent {
+  color: #333333aa;
+}
+.attributeModal .smoControl.buttonArray .icon-bravura.icon-lg {
+  font-size: 24px;
+  top:inherit;
+}
+.attributeModal .smoControl.buttonArray .icon-bravura.icon-top {
+  left:8px;
+}
+
+.attributeModal .smoControl.buttonArray .icon-bravura.icon-brassFallRoughMedium,
+.attributeModal .smoControl.buttonArray .icon-bravura.icon-brassLiftMedium {
+  font-size:20px;
+  top:50%;
+}
+.smoControl.buttonArray button:hover {
+  background:#334488;
+	color: #fff;
+	transition-duration: 0.5s;
+	transition-timing-function:ease;
+}
+button.button-array.pushed {
+  background-color: #dee;
+  border: 2px #222 inset;
+}
+button.button-array.initial {
+  background-color: #999;
+}
+.attributeModal .smoControl.multiControl.textCheckContainer .smoControl {
+  margin: 5px;
+}
+.pitchContainer .smoControl input {
+  width: 30px;
+}
+.pitch-array-item {
+  display: flex;
+}
+.attributeModal .smoControl.multiControl.textCheckContainer .text-input.smoControl {
+  flex-flow: column-reverse;
+  flex: 1 1 70px;
+  align-items: center;
+}
+.attributeModal .smoControl.multiControl .smoControl {
+  flex-flow: row nowrap;
+}
+.attributeModal .smoControl {
+  display:flex;
+  flex-flow: row nowrap;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.smoControl input[type="checkbox"], .smoControl input[type="text"] {
+  margin-right: 5px;
+  margin-left: 5px;
+  height: 1.5em;
+}
+.smoControl button, .smoControl input,.smoControl select {
+	border: 1px solid #52ba73;
+}
+.btn.btn-secondary .icon-cancel-circle {
+  position:relative;
+  right: -10px;
+}
+.smoControl button.button-array {
+  width: 35px;
+	height: 35px;
+  position:relative;
+  user-select: none;
+}
+.smoControl button.button-array.pushed {
+  font-weight: bold;
+}
+.smoControl button.button-array .icon-bravura {
+  font-size: 30px;
+}
+.smoControl.cbTextInPlace,.smoControl.cbDragTextDialog ,.smoControl.cbResizeTextBox  {
+    position:relative;
+    min-width:110px;
+}
+
+.cbTextInPlace button span.icon-checkmark {
+    color:#9b9;
+}
+
+.smoControl select label {
+    margin-left:5px;
+}
+.smoControl.rockerControl[data-param="fontSize"] input {
+    width:50px;
+}
+.smoControl.cbTextInPlace button,.smoControl.cbDragTextDialog button,
+.smoControl.cbResizeTextBox button
+ {
+    width:32px;
+}
+.smoControl.cbTextInPlace label, .smoControl.cbDragTextDialog label,
+.smoControl.cbResizeTextBox label{
+    position:absolute;
+    top:5px;
+    left:35px;
+}
+
+.smoControl.cbTextInPlace span.icon {
+    font-size:1.6em;
+}
+
+.rockerControl button {
+	width:32px;
+  height: 1.5em;
+}
+
+.rockerControl button.decrement {
+	margin-right:5px;
+}
+
+.dropdownControl select {
+	margin-left: 7px;
+	height: 30px;
+	border-radius: 5%;
+	border: 1px solid #52ba73;
+}
+.icon-flip {
+  transform: scale(1, -1);
+}
+.modal .long-text {
+  min-height: 400px;
+  overflow-y: auto;
+  font-size: 0.8rem;
+  font-family: monospace;  
+}
+.bugDialog {
+	position:absolute;
+	width:80%;
+	height:70%;
+    width:40%;
+	height:40%;
+	left:30%;
+	top:10%;
+	background: #fff;
+	z-index: 9;
+	border: 1px red dashed;
+	display:none;
+}
+
+.splashScreen .bugDialog {
+	position:absolute;
+    width:40%;
+	height:40%;
+	left:30%;
+	top:10%;
+	border:3px blue inset;
+	background: #fff;
+	padding:100px 10px;
+	z-index: 9;
+}
+.splash-div {
+  position: absolute;
+  top:40px;
+  background-color: white;
+  left: 300px;
+}
+.splashScreen .splash-title {
+    font-size: 3em;
+	font-family: sans-serif;
+	font-style:default;
+}
+.splashScreen .splash-shine {
+    font-size: 3em;
+	font-family: sans-serif;
+	font-style:italic;
+}
+
+.button-container {
+	margin-left:10px;
+}
+.bug-dismiss-button {
+	position:absolute;
+	right:0px;
+	top:0px;
+	color:red;
+}
+#bug-text-area {
+    display: block;
+    width: 80%;
+    height: 60%;
+    border: block solid 1px;
+    font-family: monospace;
+    border: black solid 1px;
+    margin: 10px;
+	overflow-y: scroll;
+}
+
+.bug-submit-report {
+	margin-left:10px;
+}
+
+
+body.bugReport .bug-modal {
+  display: flex;
+}
+
+.modal.show {
+  display: block;
+}
+.bug-title {
+  position: absolute;
+  left:75px;
+  top:35px;
+}
+
+body.bugReport .bugDialog {
+	display:block;
+}
+
+body.splashScreen .bugDialog {
+	display:block;
+}
+.bug-logo {
+	width:64px;
+	height:64px;
+	display:inline-block;
+
+}
+
+
+/* change did not get propogated */
+#help-dialog-container .helpDialog {
+	display:flex;
+  overflow: hidden;
+	background: #eef;
+  flex: 1 0 100%;
+  flex-flow:column wrap;
+  overflow-y:auto;
+	margin: 8px;
+	padding: 10px;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 10;
+  max-width: 350px;
+  min-width: 350px;
+  user-select: none;
+	border-radius: 5px;
+}
+
+.helpDialog.card-view .help-category-button {
+  display: none;
+}
+.helpDialog .helpLine strong {
+  background: rgba(128,216,128);
+  font-size: 1.3em;
+  padding: 0 3px;
+}
+.helpDialog.card-view {
+  box-shadow: 0 0 9px rgba(127, 127, 127, 0.3);
+}
+.helpDialog.card-view .helpLine.hide {
+  display: none;
+}
+.helpDialog.card-view .helpLine button.prev-topic {
+  position: absolute;
+  left:5px;
+  bottom: 5px;
+  text-align: right;
+}
+.helpDialog.card-view .helpLine button {
+  border-radius: 4px;
+  width: 120px;
+}
+.helpDialog.card-view .helpLine button.next-topic {
+  position: absolute;
+  right:5px;
+  bottom: 5px;
+  text-align: left;
+}
+.helpDialog.card-view .helpLine button.next-topic span.icon {
+  position: absolute;
+  right: 2px;
+}
+.helpDialog.card-view .helpLine button.prev-topic span.icon {
+  position: absolute;
+  left: 2px;
+}
+.helpDialog button.close {
+  position: absolute;
+  right: 5px;
+  color: red;
+}
+.workspace {
+  overflow:hidden;
+}
+
+.helpLine {
+	margin-top:4px;
+  margin-bottom:4px;
+  display:flex;
+  flex-flow:row wrap;
+}
+
+.help-title span.icon {
+	font-size:.6em;
+	border: 1px black solid;
+}
+
+.help-category-button {
+  display:flex;
+  flex: 1 1 100%;
+}
+
+.help-category-text {
+  font-size:1.2em;
+}
+
+.helpLine.showSection .help-content {
+	display:block;
+}
+.helpLine.showSection .help-content img, 
+.helpDialog.card-view  .help-content img{
+  width: 300px;
+  margin-left: 25px;
+  border: 1px solid black;
+}
+.helpLine.showSection .help-category-text {
+  display:none;
+}
+
+.helpDialog.display-all .helpLine .help-content {
+  display:none;
+}
+
+.helpLine .help-title {
+	background: #eef;
+	text-align: left;
+	border: none;
+  display:flex;
+  flex: 1 1 100%;
+	border-bottom: 1px black dotted;
+}
+
+.helpKey, .wideKey {
+    border: 1px solid #222;
+    border-radius: 4px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 6px;
+    margin-right: 5px;
+    margin-top:5px;
+}
+
+.kb-float .helpKey {
+  width:40px;
+  height: 30px;
+  border: 2px solid #222;
+}
+.helpKey {
+  width: 30px;
+}
+.kb-float  .wideKey {
+  width: 60px;
+  border: 2px solid #222;
+  height: 30px;
+}
+
+.translation-editor {
+  display:none;
+}
+
+body.translation-mode {
+  overflow: auto;
+}
+body.translation-mode .translation-editor {
+  display: block;
+  overflow: auto;
+  background: #eed;
+}
+
+body.translation-mode .workspace {
+  display:none;
+}
+
+.top-translate-container {
+  height:100%;
+}
+
+.ribbon-translate-container,
+.db-translate-container,
+.menu-translate-container {
+  position: relative;
+  margin: 10px 3px;
+}
+.db-translate-title, .menu-translate-title, .ribbon-translate-title {
+  display:inline-block;
+  margin-left:35px;
+}
+.db-translate-container .dialog-element-container,
+.menu-translate-container .menu-element-container,
+.ribbon-translate-container .ribbon-button-container {
+  display:none;
+}
+
+.db-translate-container.expanded .dialog-element-container,
+.menu-translate-container.expanded .menu-element-container,
+.ribbon-translate-container.expanded .dialog-element-container
+.dialog-component-label {
+  display:block;
+}
+
+.db-translate-container.expanded .dialog-element-container[data-component],
+.menu-translate-container.expanded .dialog-element-container[data-menulabel],
+.ribbon-translate-container.expanded .ribbon-button-container {
+  display:block;
+  margin-left:25px;
+  margin-top:5px;
+}
+
+.dialog-element-container[data-itemtext],
+.dialog-element-container[data-ribbon-button]
+ {
+  margin-left:50px;
+}
+
+.db-translate-container.expanded .dialog-element-container[data-component]  .dialog-element-container,
+.db-translate-container.expanded .dialog-element-container[data-component]  .dialog-element-container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.db-translate-container.expanded .dialog-element-container[data-component-option] {
+  display:inline-block;
+  margin-left:50px;
+}
+.dialog-component-label,.dialog-component-options {
+  display:flex;
+  flex-flow:column;
+}
+
+.trans-label {
+  display:flex;
+}
+
+.translation-json-text {
+  margin:25px;
+  margin:10px;
+}
+button.translate-submit-button {
+  margin: 20px 25px;
+}
+
+.trans-db-text,.trans-en-text {
+  display:flex;
+  flex: 0 1 250px;
+  border: 1px #999 solid;
+  border-radius: 4px;
+}
+.trans-label-input  {
+  border: 2px #9d9 solid;
+  border-radius: 4px;
+}
+
+#render-progress {
+  display: none;
+  width:200px;
+  height:25px;
+  padding:15px 0 0 0;
+  margin:0;
+  text-align: left;
+  z-index:12;
+  top: 40%;
+  left:40%;
+  position:absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+}
+#render-progress[value]::-webkit-progress-bar {
+  background-color:#eee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+#render-progress[value]::-webkit-progress-value {
+  background: #F70;
+}
+body.progress-modal #render-progress {
+  display: block;
+}

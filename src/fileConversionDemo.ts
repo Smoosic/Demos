@@ -12,13 +12,13 @@ export class fileConversionApp {
   static midiKeyPath = 'https://smoosic.github.io/SmoScores/miditest/keytime.mid';
   static async run() {
     // Create the DOM scaffolding
-    const dom = document.getElementById('smoo');    
-    if (!dom) {
+    const domContainer = document.getElementById('smoo');    
+    if (!domContainer) {
       throw('No element for Smoosic!');
     }
-    Smo.SuiDom.createUiDom(dom);
+    
     const mode: SmoMode = 'application';
-    const config = { mode };
+    const config = { mode, domContainer };
     const application = await Smo.SuiApplication.configure(config);
     await fileConversionApp.tester(application);
   }
@@ -31,7 +31,7 @@ export class fileConversionApp {
       });
       QUnit.test('load', assert => {
         assert.equal(view.score.staves[0].measures.length, 17);
-        assert.equal($('#boo .vf-annotation').length, 82);
+        assert.equal($('#smoo .vf-annotation').length, 82);
       });
     });
     QUnit.module('convert xml', (hooks) => {
@@ -44,7 +44,7 @@ export class fileConversionApp {
       });
       QUnit.test('load converted Xml', assert => {
         assert.equal(view.score.staves[0].measures.length, 17);
-        assert.equal($('#boo .vf-annotation').length, 82);
+        assert.equal($('#smoo .vf-annotation').length, 82);
       });  
     });
     QUnit.module('convert midi', (hooks) => {

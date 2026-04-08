@@ -9,13 +9,12 @@ import { SmoMode } from 'smoosic';
 export class mainApp {
   static run() {
     // Create the DOM scaffolding
-    const dom = document.getElementById('smoo');    
-    if (!dom) {
+    const domContainer = document.getElementById('smoo');    
+    if (!domContainer) {
       throw('No element for Smoosic!');
     }
-    Smo.SuiDom.createUiDom(dom);
     const mode: SmoMode = 'application';
-    const config = { mode };
+    const config = { mode, domContainer };
     Smo.SuiApplication.configure(config);
   }
 }

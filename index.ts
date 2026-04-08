@@ -1,7 +1,7 @@
 import { runner } from './src/runner';
-import { SuiApplication, SuiDom, SmoScore, IsPitchLetter, 
+import { SuiApplication, SmoScore, IsPitchLetter, 
   SmoMusic, SmoMeasure, SmoNote, SmoOrnament, SmoInstrument, SmoSystemStaff,
-  SmoSystemGroup, SmoSelector, dynamicCtorInit, SmoBeamer, 
+  SmoSystemGroup, SmoSelector, SmoBeamer, 
   createAndDisplayDialog, SuiNoteMenu, SuiMenuCustomizer, SmoOperation,
   SmoToXml, XmlToSmo, SuiXhrLoader, MidiToSmo, parseMidi, cardKeysHtmlEn,
    cardNotesLetterHtmlEn, cardNotesChromaticHtmlEn, cardNotesChordsHtmlEn,
@@ -14,9 +14,9 @@ import { SuiApplication, SuiDom, SmoScore, IsPitchLetter,
  * Expose the Smoosic symbols we need in the demo programs, and add them to our 
  * default namespace
  */
-export const Smo = { SuiApplication, SuiDom, SmoScore, IsPitchLetter, 
+export const Smo = { SuiApplication, SmoScore, IsPitchLetter, 
   SmoMusic, SmoMeasure, SmoNote, SmoOrnament, SmoInstrument, SmoSystemStaff,
-  SmoSystemGroup, SmoSelector, dynamicCtorInit, SmoBeamer, createAndDisplayDialog,
+  SmoSystemGroup, SmoSelector, SmoBeamer, createAndDisplayDialog,
   SuiNoteMenu, SuiMenuCustomizer, SmoOperation, 
   SmoToXml, XmlToSmo, SuiXhrLoader, MidiToSmo, parseMidi, cardKeysHtmlEn,
    cardNotesLetterHtmlEn, cardNotesChromaticHtmlEn, cardNotesChordsHtmlEn,
