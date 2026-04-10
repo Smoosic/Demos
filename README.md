@@ -1,6 +1,10 @@
 # Changes
-12-31-2025
+4-10-2026
+2 new features added to Smoosic, continuous horizontal scroll, and mouse-pitch selection.
 
+The DOM structure Smoosic expects has been simplified, which might be a breaking change for some. There is a single, required configuration field (`domContainer`) for the top-level container.  This makes it possible, in theory, to support multiple scores on the same page which might be useful for some applications.  
+
+12-31-2025
 Happy new year!
 
 The demo files weren't working for most people, they should be now.  Some of the exports from Smoosic were broken.  Please open
